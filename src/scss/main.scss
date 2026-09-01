@@ -2,3 +2,53 @@
 @import "base";
 @import "layout";
 @import "modules/example";
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  gap: 16px;
+  background-color: grey;
+}
+
+button {
+  border: none;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default {
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 16px 20px;
+}
+
+.small {
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+}
+
+.light {
+  background: var(--Primary-900, #000);
+  color: var(--Primary-100, #f5f5f5);
+  transition: background-color 0.3s ease;
+}
+
+.light:hover {
+  background: var(--Primary-800, #343434);
+}
+
+.dark {
+  background: var(--Primary-0, #fff);
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.dark:hover {
+  background: var(--Primary-500, #b4bbc0);
+}
